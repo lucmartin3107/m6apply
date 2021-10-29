@@ -14,4 +14,4 @@ The 'andwhere' and 'orwhere prepare the conditions, and the
 'setparameter' seem to define them.
 
 SELECT * FROM country WHERE ids IN (1,2) 
-OR WHERE population > 1000
+OR population > 1000
