@@ -1,0 +1,30 @@
+echo $data->lorem;
+----------faux----------------
+echo $data[‘hello'] ?? 'world';
+------------------vrai----------------
+
+class Car extends Vehicle
+{
+/**
+* {@inheritDoc}
+*/
+private function describe(): string
+{
+return 'i am a car';
+}
+}
+       ---------- faux------------
+
+
+class Motorbike extends Vehicle
+{
+/**
+* @return string
+*/
+public function run(): string
+{
+return 'Vroooom';
+}
+}
+
+-----------vrai------------

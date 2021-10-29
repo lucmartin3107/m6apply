@@ -1,0 +1,19 @@
+---------requête Drupal:--------------
+
+In this query, there are two conditions,
+ it seems that the default relation between them is an 'AND'.
+ So we test the value 'true' at 'PUBLISHED' (= 1) and the
+ value 'page at column' type '.
+
+SELECT * FROM node WHERE type='page' AND PUBLISHED=1
+
+--------------requête Doctrine:--------------
+
+No action is specified, it must be a 'SELECT'.
+The 'andwhere' and 'orwhere prepare the conditions, and the
+'setparameter' seem to define them.
+
+SELECT * FROM country WHERE ids IN (1,2) 
+OR WHERE population > 1000
+
+
