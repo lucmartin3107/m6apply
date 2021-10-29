@@ -1,7 +1,22 @@
-echo $data->lorem;
-----------faux----------------
-echo $data[‘hello'] ?? 'world';
-------------------vrai----------------
+--------------false----------
+       echo $data->lorem;
+
+It must be echo $data['lorem] to echo ipsum
+
+----------false----------------
+
+
+-----------true-------------------
+      
+       echo $data[‘hello'] ?? 'world';
+
+the ‘ must be ' and if the key $data[key] exists in $data
+the code will print its value, else it will print world.
+
+------------------true----------------
+
+
+-------------------false------------
 
 class Car extends Vehicle
 {
@@ -13,7 +28,15 @@ private function describe(): string
 return 'i am a car';
 }
 }
-       ---------- faux------------
+
+the describe function already exists, and it's a private function.
+
+----------------------false-----------------------
+
+
+
+
+       ---------- true------------
 
 
 class Motorbike extends Vehicle
@@ -26,5 +49,6 @@ public function run(): string
 return 'Vroooom';
 }
 }
+the vroooom function not exists in vehicle 
 
------------vrai------------
+-----------true------------
