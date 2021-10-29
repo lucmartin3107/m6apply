@@ -1,7 +1,7 @@
 --------------false----------
        echo $data->lorem;
 
-It must be echo $data['lorem] to echo ipsum
+It must be echo $data['lorem'] to echo ipsum
 
 ----------false----------------
 
